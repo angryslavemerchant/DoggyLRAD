@@ -8,7 +8,7 @@ import requests
 
 MIC_DEVICE      = 0              # device index from sd.query_devices()
 SAMPLE_RATE     = 16000          # YAMNet expects 16kHz
-BARK_THRESHOLD  = 0.7            # bark detected if dog class score exceeds this
+BARK_THRESHOLD  = 0.71            # bark detected if dog class score exceeds this
 ESP32_IP        = "192.168.4.1"  # default ESP32 AP address
 ESP32_ENDPOINT  = f"http://{ESP32_IP}/on"
 NOTIFY_ESP32    = True           # set True when ESP32 is ready
