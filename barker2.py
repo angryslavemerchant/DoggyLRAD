@@ -47,7 +47,7 @@ with open(LABELS_PATH, newline="") as f:
     next(reader)
     LABELS = [row[2] for row in reader]
 
-DOG_KEYWORDS = ["dog", "bark", "bow-wow", "growling", "whimper"]
+DOG_KEYWORDS = ["bark", "bow-wow"]
 DOG_INDICES  = set(i for i, label in enumerate(LABELS) if any(k in label.lower() for k in DOG_KEYWORDS))
 print(f"Watching classes: {[LABELS[i] for i in DOG_INDICES]}")
 
